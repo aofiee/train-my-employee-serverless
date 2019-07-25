@@ -1,0 +1,27 @@
+{
+  "hosting": [
+    {
+      "site": "twin2019",
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "site": "api-twin2019",
+      "public": "api-hosting",
+      "rewrites": [
+        {
+          "source": "/function/helloWorld",
+          "function": "helloWorld"
+        },
+        {
+          "source": "/function/aofiee",
+          "function": "aofiee"
+        }
+      ]
+    }
+  ]
+}
